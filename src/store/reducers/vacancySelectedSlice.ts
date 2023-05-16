@@ -14,11 +14,12 @@ const initialState:vacancy = {
     price:0,
     qualifications:[],
     responsibilities:[],
-    subtitle:"",
+    about:"",
     testId:"",
     title:"",
     aboutCompany:"",
-    occupied:""
+    occupied:"",
+    repliesUsers:[],
 }
 
 export const vacancySeletedSlice = createSlice({

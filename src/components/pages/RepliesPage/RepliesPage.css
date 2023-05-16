@@ -1,0 +1,54 @@
+/* <div className="my-replies">
+<div className="my-replies__container">
+  <ul className="my-replies__lists">
+    {userVacanciesRepliesList.map((v, index) => {
+      return (
+        <li key={v._id} className="my-replies__list">
+          <RepliesPreview vacancy={v} />
+          <div className="my-replies__status-container">
+            <span className="basic__text">Статус отклика</span>
+            <p className="status text">
+              {convertreplyStatus(
+                replies[index].replyData.accepted.isAccepted
+              )}
+            </p>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</div>
+</div> */
+.my-replies{
+  max-width: 100%;
+  width: 100%;
+  /* padding: 16px 24px 28px; */
+}
+.my-replies__lists{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.my-replies__list {
+  padding: 0;
+
+}
+.reply__container{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-replies__title{
+  margin-top: 0;
+}
+.replies{
+  margin: 0;
+}
+.my-replies__status-container{
+
+}
+.reply__content{
+
+}

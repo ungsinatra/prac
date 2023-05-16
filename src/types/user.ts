@@ -8,4 +8,5 @@ export type user = {
     gender:string,
     age:number | null,
     resume:string | null,
+    vacancy:string | null,
 }

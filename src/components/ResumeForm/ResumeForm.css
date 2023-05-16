@@ -1,0 +1,15 @@
+.resume-form{
+    max-width: 100%;
+    width: 100%;
+}
+.resume-form__container{
+    max-width: 100%;
+    width: 100%;
+ 
+
+}
+.resume-form-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

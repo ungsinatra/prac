@@ -1,0 +1,52 @@
+.dialog-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.212);
+}
+.dialog-item:hover{
+  background-color: #cecaca96;
+  color: #ffffff;
+}
+.dialog-item.active {
+  background-color: #007EE5;
+  color: #ffffff;
+}
+
+.dialog-item__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d18686;
+  margin-right: 10px;
+}
+
+.dialog-item__info {
+  flex: 1;
+}
+
+.dialog-item__name {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.dialog-item__name.active {
+  color: white;
+  font-weight: bold;
+}
+
+.dialog-item__last-message {
+  color: #cecaca;
+  transition: color 0.3s ease;
+}
+
+.dialog-item__last-message.unread {
+  font-weight: bold;
+}
+
+.dialog-item__last-message.read {
+  font-weight: normal;
+}

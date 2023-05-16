@@ -1,0 +1,10 @@
+.form__selects{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.form__select{
+  display: flex;
+  flex-direction: column;
+}

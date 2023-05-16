@@ -1,0 +1,19 @@
+
+
+.resume__container{
+  max-width: 1024px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  margin-top: 20px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 300px 2fr;
+  padding: 20px;
+}
+.resume__sideBar{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 100%;
+  min-width: 0;
+  grid-gap: 12px;
+}

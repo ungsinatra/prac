@@ -1,0 +1,171 @@
+
+
+
+
+
+.vacancy__item {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 50px 20px 50px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.vacancy__main {
+    margin: 0;
+    list-style: none;
+    list-style-type:none;
+    /* padding-left: 22px; */
+    padding: 0;
+}
+
+.vacancy__main-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.vacancy__main-title:hover {
+    text-decoration: underline;
+}
+
+.vacancy__main-price {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0 10px 0;
+    font-family: 'Inter', sans-serif;
+
+}
+.vacancy__main-direction{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.vacancy__main-subtitle {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin: 20px 0 5px 0;
+}
+
+.vacancy__main-company {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin: 20px 0 5px 0;
+}
+
+.vacancy__main-location {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+.vacancy__main-button {
+    cursor: pointer;
+    margin: 15px 0 0 0;
+    background: green;
+    font-size: 14px;
+    width: 120px;
+    color: white;
+}
+.vacancy__company-logo{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: black;
+}
+
+
+@media (max-width: 1060px) {
+    .vacancy__item {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
+}
+/* styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  .vacancy__item {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .vacancy__main {
+    margin-top: 15px;
+  }
+
+  .vacancy__company-logo {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .vacancy__main-title {
+    font-size: 16px;
+    margin: 10px 0 3px 0;
+  }
+
+  .vacancy__main-price,
+  .vacancy__main-direction,
+  .vacancy__main-subtitle,
+  .vacancy__main-company,
+  .vacancy__main-location {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .vacancy__main-button {
+    margin-top: 20px;
+  }
+}
+
+/* styles for screens 768px and wider */
+@media (min-width: 768px) {
+  .vacancy__item {
+    padding: 20px 50px;
+  }
+
+  .vacancy__company-logo {
+    max-width: 200px;
+    margin-top: 0;
+  }
+
+  .vacancy__main-title {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+  }
+
+  .vacancy__main-price,
+  .vacancy__main-direction,
+  .vacancy__main-subtitle,
+  .vacancy__main-company,
+  .vacancy__main-location {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 440px) {
+    .vacancy__item{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+}
+

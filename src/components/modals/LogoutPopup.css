@@ -1,0 +1,112 @@
+.popup{
+  display: flex;
+  visibility: hidden;
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  justify-content: center;  
+  background-color: rgba(0, 0, 0,.5);
+  transition: visibility .3s, opacity 0.3s linear; 
+  opacity: 0; 
+}
+
+.popup__content{
+  cursor: pointer;
+  position: relative;
+  padding: 34px 36px 37px 36px;
+  max-width: 430px;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 196px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.popup__form{
+  position: relative;
+  max-width: 358px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.popup__btn-save{
+  font-family: 'Inter',Arial,sans-serif;
+  max-width: 100%;
+  background-color:black;
+  color: white;
+  height: 50px;
+  border: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 2px;
+  padding: 0;
+  transition: opacity .3s ;
+  cursor: pointer;
+  margin-top: 22px;
+}
+.popup__btn-save:hover{
+  opacity: .8;
+}
+@media screen and (max-width:320px) {
+  .popup__btn-save{
+      font-size: 14px;
+      width: 238px;
+      height: 46px;    
+  }
+}
+.popup__title{
+  max-width: 330px;
+  margin: 0;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 46px 0;
+  color: #000000;
+}
+
+@media screen and (max-width:444px) {
+  .popup__title{
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 72px 0;
+  }
+}
+
+.popup__opened{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__close-btn{
+  cursor: pointer;
+  top: -40px; 
+  right: -40px; 
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../assets/img/CloseIcon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: opacity .3s;
+}
+

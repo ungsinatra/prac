@@ -1,0 +1,19 @@
+
+.badge__container{
+  min-height: 30px;
+  border-radius: 4px;
+  color: #5677fc;
+  font-weight: 700;
+  border: 1px solid #5677fc;
+  padding: 6px 10px;
+  font-size: 14px;
+    line-height: 1.29;
+}
+
+.badge__container:hover{
+  background-color: #5677fc;
+  color: white;
+}
+.badge__text{
+  margin: 0;
+}

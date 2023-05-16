@@ -19,7 +19,9 @@ import searchSortReducer from "./reducers/searchSortSlice";
 import userWorksReducer from    './reducers/userWorksSlice'
 import  replyReducer  from "./reducers/repliesSlice";
 import createVacancyReducer from "./reducers/createVacancySlice";
-import createTestReducer from './reducers/createTestSlice'
+import createTestReducer from './reducers/createTestSlice';
+import createResumeSlice from "./reducers/createResumeSlice";
+import chatsReducer from './reducers/chatsSlice';
 
 const rootReducer = combineReducers({
     logingReducer,
@@ -42,8 +44,9 @@ const rootReducer = combineReducers({
     userWorksReducer,
     replyReducer,
     createVacancyReducer,
-    createTestReducer
-
+    createTestReducer,
+    createResumeSlice,
+    chatsReducer
 });
 
 

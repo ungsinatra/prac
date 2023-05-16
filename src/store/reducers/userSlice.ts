@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import { user } from "../../types/user";
-
+import { authApi } from "../service/auth";
 
 const initialState: user = {
     _id:null,
@@ -11,6 +11,7 @@ const initialState: user = {
     email: "",
     phone:'',
     resume:null,
+    vacancy:null
 };
 
 export const UserSlice = createSlice({
@@ -28,8 +29,22 @@ export const UserSlice = createSlice({
                 gender:'',
                 email: "",
                 phone:'',
-                resume:null,}
+                resume:null,
+                vacancy:null
+            }
         }
+    },
+    extraReducers:(builder) => {
+        builder
+      .addMatcher(authApi.endpoints.login.matchFulfilled, (state, action) => {
+        state = {...state,...action.payload._id};
+      })
+      .addMatcher(authApi.endpoints.register.matchFulfilled, (state, action) => {
+        state = {...state,...action.payload};;
+      })
+      .addMatcher(authApi.endpoints.current.matchFulfilled, (state, action) => {
+        state = {...state,...action.payload};
+      });
     }
 })
 

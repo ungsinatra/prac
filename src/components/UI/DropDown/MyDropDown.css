@@ -1,0 +1,8 @@
+.drop-down{
+    border: 1px solid #5677fc;
+    border-radius: 4px;
+}
+.drop-down__item{
+  margin: 0;
+  font-size: 26px;
+}

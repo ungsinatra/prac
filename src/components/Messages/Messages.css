@@ -1,0 +1,7 @@
+.chat__messages {
+  max-width: 100%;
+  width: 100%;
+  min-height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

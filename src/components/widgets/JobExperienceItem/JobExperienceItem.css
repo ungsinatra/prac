@@ -1,0 +1,78 @@
+/* <div className="job-experience-item">
+<div className="with-avatar-aside">
+  <aside className="with-avatar-aside__aside">
+    <span className="basic-avatar">
+      <img className="basic-avatar__imag" src="" alt="" />
+    </span>
+  </aside>
+</div>
+<div className="with-avatar-aside__content">
+  <div className="job-experience__item-title">
+    <span className="job-experience__item-text">{nameOfCompany}</span>
+  </div>
+</div>
+<div className="job-experience-item__short-info">
+  <div className="job-position">
+    <div className="job-position__title">
+      <span className="basic-text job-position__text">{position}</span>
+    </div>
+    <div className="job-position__duration">{`${startWork} - ${endWork}`}</div>
+  </div>
+</div>
+</div> */
+
+
+.with-avatar-aside{
+  box-sizing: border-box;
+  display: flex;
+  list-style: none;
+}
+.with-avatar-aside__aside{
+  display: flex;
+  margin-right: 15px;
+}
+.basic-avatar{
+  width: 50px;
+  height: 50px;
+
+}
+.basic-avatar__imag{
+  display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.with-avatar-aside__content{
+  flex: 1 1;
+    min-width: 0;
+    max-width: calc(100% - 65px);
+}
+.job-experience-item__short-info{
+  margin-top: 4px;
+}
+.job-experience-item__header{
+  display: flex;
+  align-items: center;
+}
+.basic-text{
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.job-experience__item-text{
+  color: #999;
+}
+.job-position__text{
+  font-size: 14px;
+  color: black;
+}
+.job-position__duration{
+  font-size: 16px;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+.separated-list__item{
+  margin-top: 0;
+}

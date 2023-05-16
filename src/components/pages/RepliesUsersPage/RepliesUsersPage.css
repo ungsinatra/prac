@@ -1,0 +1,29 @@
+.replies{
+  width: 100%;
+  /* padding: 16px 24px 28px; */
+}
+.replies__container{
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.replies__header__title{
+  margin-top: 0;
+}
+
+.answer{
+  list-style: none;
+}
+.reply__content--hidden{
+  display: none;
+}
+.reply__main-contenet{
+  margin: 0 0 20px 0;
+}
+.replies__drop-down__item{
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.reply__userName{
+  font-size: 16px;
+}

@@ -1,0 +1,23 @@
+.vacancies {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+}
+
+.vacancies__container {
+  flex: 1 0 auto;
+  width: 100%;
+  flex-direction: column;
+}
+.vacancies__filters{
+  display: flex;
+  flex-direction: column;
+}
+.vacancy-preview{
+  margin-top: 30px;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}

@@ -1,0 +1,28 @@
+.login{
+  max-width: 100%;
+  width: 100%;
+  min-height: 60.8vh;
+}
+.login__container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 200px;
+
+}
+@media (max-width: 438px) {
+  .form {
+    max-width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form_input{
+    height: 30px;
+    width: 90%;
+  }
+  .form_button{
+    max-width:90%;
+    width: 100%;
+    padding: 0;
+  }
+}

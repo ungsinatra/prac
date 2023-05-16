@@ -1,0 +1,86 @@
+.sideBar {
+  
+}
+
+.sideBar__container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.sideBar__container > * + * {
+  margin-top: 10px;
+}
+.select__wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+.ant-select, .ant-input-number {
+  width: 100%;
+}
+.sideBar__select{
+  padding: 0;
+  width: 100%;
+}
+.sideBar__input{
+  width: 100%;
+}
+
+@media (max-width: 1064px) {
+
+  .sideBar__container {
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+
+}
+
+@media (max-width: 838px) {
+
+  .sideBar__container {
+    margin: 0;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .select__wrapper{
+    
+    max-width: 100%;
+    width: 100%;
+  }
+  .sideBar__select{
+    width: 100%;
+  }
+  .sideBar__input{
+    width: 100%;
+  }
+  .ant-select, .ant-input-number {
+    width: 100%;
+  }
+  
+
+
+}
+
+/* @media (max-width: 480px) {
+  .sideBar {
+    padding: 0;
+  }
+
+  .sideBar__container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+ 
+} */

@@ -3,11 +3,11 @@ import { work } from "../../types/resume";
 
 const initialState:work[] = [
     {
-        endWork:'12.02.12',
-        nameOfCompany:"name",
-        position:"ss",
-        responsibilities:"ss",
-        startWork:"12.23.23"
+        endWork:'',
+        nameOfCompany:"",
+        position:"",
+        responsibilities:"",
+        startWork:""
     }
 ];
 
