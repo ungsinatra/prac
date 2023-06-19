@@ -13,7 +13,6 @@ import ResumeCard from "../widgets/ResumeCard/ResumeCard";
 import UserPage from "../pages/UserPage/UserPage";
 import ProtectedRoute from "../HOC/ProtectedRoute";
 import TestingPage from "../pages/TestingPage/TestingPage";
-import TestModals from "../modals/TestModals";
 import { verifiedToken } from "../../hooks/useVeryfiedToken";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { UserSlice } from "../../store/reducers/userSlice";
@@ -24,17 +23,15 @@ import InfoPopup from "../modals/InfoPopup";
 import ResumeForm from "../ResumeForm/ResumeForm";
 import RepliesPage from "../pages/RepliesPage/RepliesPage";
 import VacancyForm from "../VacancyForm/VacancyForm";
-import RepliesUsers from "../pages/RepliesUsersPage/RepliesUsersPage";
 import DialogsPage from "../pages/DialogsPage/DialogsPage";
 import { socket } from "../../core/socket";
 import { Layout } from "antd";
 import Footer from "../layouts/Footer/Footer";
 import "./App.css";
-import Sider from "../layouts/Sider/Sider";
 import Chat from "../Chat/Chat";
 import RepliesUsersPage from "../pages/RepliesUsersPage/RepliesUsersPage";
+
 function App() {
-  const [notification, setNotification] = useState("");
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const { setUserInfo } = UserSlice.actions;
@@ -43,11 +40,13 @@ function App() {
   const { Content } = Layout;
   const { activeChat } = useAppSelector((state) => state.chatsReducer);
   const { isLoggedIn } = useAppSelector((state) => state.isLoginReducer);
+
   useLayoutEffect(() => {
     const tokenData: { token: string } | null = JSON.parse(
       localStorage.getItem("jwt") || "null"
     );
     if (!tokenData?.token) {
+      console.log("yes");
       navigate("/sing-up", { replace: true });
       return;
     }
@@ -73,11 +72,11 @@ function App() {
   const [collapsed, setCollapsed] = useState(false);
 
   // FIX
-  useEffect(() => {
-    socket.on("NOTIFICATION:NEW_MESSAGE", (data) => {
-      setNotification(data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   socket.on("NOTIFICATION:NEW_MESSAGE", (data) => {
+  //     setNotification(data);
+  //   });
+  // }, []);
 
   const { _id } = useAppSelector((state) => state.UserReducer);
 

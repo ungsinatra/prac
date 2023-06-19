@@ -1,10 +1,9 @@
 import { vacancy } from "../types/vacancy";
-import { useMemo } from "react";
 import { resume } from "../types/resume";
 
 type sortTypeSearchSelect = {
   relevance: string;
-  date: string;
+  date: string;   
   salary_desc: string;
   salary_asc: string;
 };
