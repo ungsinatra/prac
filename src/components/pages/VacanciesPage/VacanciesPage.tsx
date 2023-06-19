@@ -17,6 +17,7 @@ import { loaderSlice } from "../../../store/reducers/loaderSlice";
 import { Layout, Spin } from "antd";
 import "./vacanciesPage.css";
 import Spiner from "../../common/Spiner/Spiner";
+import { BASE_URL } from "../../../utils/constants";
 
 const VacanciesPage = () => {
   const { Content } = Layout;
@@ -40,7 +41,7 @@ const VacanciesPage = () => {
   const sortedListSearchAndOther = useSidebarSort(salactedSord, sortedList);
   useEffect(() => {
     dispatch(setLoader(true));
-    const vacancies = fetch("http://158.160.28.109/api/vacancies", {
+    const vacancies = fetch(`${BASE_URL}/vacancies`, {
       method: "GET",
     })
       .then((res) => {

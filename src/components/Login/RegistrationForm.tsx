@@ -6,6 +6,7 @@ import { registerSlice } from "../../store/reducers/registerSlice";
 import "./registration.css";
 import { NotificationType } from "../../types/notification";
 import MyNotification from "../common/MyNotification/MyNotification";
+import { BASE_URL } from "../../utils/constants";
 const RegistrationForm: FC = () => {
   const {
     email,
@@ -28,7 +29,7 @@ const RegistrationForm: FC = () => {
   console.log(link);
   const fetchReg = async () => {
     try {
-      const res = await fetch(`http://158.160.28.109/api/singup`, {
+      const res = await fetch(`${BASE_URL}/singup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json; charset=UTF-8",

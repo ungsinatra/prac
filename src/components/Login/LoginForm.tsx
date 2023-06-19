@@ -9,6 +9,7 @@ import { isLoggedInSlice } from "../../store/reducers/isLoginSlice";
 import "./loginForm.css";
 import { NotificationType } from "../../types/notification";
 import MyNotification from "../common/MyNotification/MyNotification";
+import { BASE_URL } from "../../utils/constants";
 const LoginForm = () => {
   const { password, email, isLogIned } = useAppSelector(
     (state) => state.logingReducer
@@ -28,7 +29,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const login = async () => {
     try {
-      const res = await fetch("http://158.160.28.109/api/singin", {
+      const res = await fetch(`${BASE_URL}/singin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json; charset=UTF-8",

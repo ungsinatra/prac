@@ -12,6 +12,7 @@ import { useSidebarSort } from "../../../hooks/useSortSidebar";
 import Spiner from "../../common/Spiner/Spiner";
 import { Content } from "antd/es/layout/layout";
 import SideBar from "../../widgets/SideBar/SideBar";
+import { BASE_URL } from "../../../utils/constants";
 const ResumesPage = () => {
   const { select, input } = useAppSelector(
     (state) => state.SearchTemplateReducer
@@ -28,17 +29,16 @@ const ResumesPage = () => {
   // const sortedResume = useSidebarSort();
   useEffect(() => {
     dispatch(setLoader(true));
-    fetch("http://158.160.28.109/api/resumes", {
+    fetch(`${BASE_URL}/resumes`, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-
         dispatch(setExperts(data));
       })
       .catch((e) => {
-        throw new Error(e.message);
+        throw new Error(e);
       })
       .finally(() => {
         dispatch(setLoader(false));
