@@ -210,7 +210,7 @@ const TestingPage = () => {
                             updateAnswers(
                               index,
                               answer.answer,
-                              answer._id,
+                              question._id,
                               question.question
                             )
                           }
